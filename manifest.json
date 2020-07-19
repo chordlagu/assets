@@ -1,7 +1,7 @@
 {
   "short_name": "Chordlagu.id",
   "name": "Chordlagu.id Situs Kunci Gitar",
-  "start_url": "./?utm_source=web_app_manifest",
+  "start_url": "https://www.chordlagu.id",
   "icons": [
     {
       "src": "https://content.chordlagu.id/chrome-touch-icon-192x192.png",
