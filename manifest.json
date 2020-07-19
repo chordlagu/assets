@@ -4,7 +4,7 @@
   "start_url": "./?utm_source=web_app_manifest",
   "icons": [
     {
-      "src": "/chrome-touch-icon-192x192.png",
+      "src": "https://content.chordlagu.id/chrome-touch-icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     }
