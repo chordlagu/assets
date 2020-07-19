@@ -1,9 +1,9 @@
 var cacheName = 'hello-pwa'; 
 var filesToCache = [
 '/',    
-'/index.html',    
-'/style.css',  
-'/main.js'  ];  
+'https://content.chordlagu.id/transpose.js',    
+'https://content.chordlagu.id/tooltip.js',  
+'https://content.chordlagu.id/main.js'  ];  
 self.addEventListener('install', function(e) { 
 e.waitUntil(
 caches.open(cacheName).then(function(cache) { 
