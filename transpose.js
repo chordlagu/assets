@@ -1,12 +1,33 @@
+function renderChords() {
+    $('#song_chords').html("");
+    //var regex = /([A-H][b#]?[m]?[\(]?(2|5|6|7|9|11|13|6\/9|7\-5|7\-9|7 \#5|7\#9|7\+5|7\+9|7b5|7b9|7sus2|7sus4|add2|add4|add9|aug|dim|dim 7|m\|maj7|m6|m7|m7b5|m9|m11|m13|maj|maj7|maj9|maj11|maj13|mb5|m|s us|sus2|sus4){0,2}(\/[A-H])?(\))?)(?=\s|\.|\)|-|\/)/g;
+   
+    var chords = $('pre[data-key] span.c').toArray().map(v => v.textContent); 
+    
+    chords = chords.filter(function(value, index, self) {
+      return self.indexOf(value) === index;
+    });
+    
+    var titleChords = chords
+      .join(' ')
+      .replace(/\+/g, 'p')
+      .replace(/\-/g, 'z')
+      .replace(/\#/g, 'w')
+      .replace(/\//g, 's')
+      .split(' ');
+    
+    var content = '';
+    
+    chords.forEach(function(value, index) {
+    content += '<img class="mobchords" alt="' + value + '" width="41"height="72" src="https://ukula.ru/newchords/' + titleChords[index] + '.png" />';
+      });
+    console.log(content);
+    $('#song_chords').append(content);
+
+}
+
 /*!
- * jQuery Chord Transposer plugin v1.0
- * http://codegavin.com/projects/transposer
- *
- * Copyright 2010, Jesse Gavin
- * Dual licensed under the MIT or GPL Version 2 licenses.
- * http://codegavin.com/license
- *
- * Date: Sat Jun 26 21:27:00 2010 -0600
+ * iVad song
  */
 (function($) {
 
