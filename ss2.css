@@ -74,3 +74,7 @@ color:#007fb2;
 ul.nav-social li a.igicon:hover {
 color:#527fa4;
 }
+.post-view {font-size: 12px;background: white;padding: 3px;border-radius: 4px; padding-left:9px; padding-right:9px; padding-bottom:6px; padding-top:6px; color:#303030;-webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */      }
