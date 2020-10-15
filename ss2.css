@@ -1,0 +1,76 @@
+@media screen and (max-width:940px){
+#wrapper {width: 100%;margin: 0 auto;float: none;padding: 0;}
+#main{width:auto}
+#content{margin-left:5px;width:97%;padding:0}
+#content .related_posts{padding:0}
+#comments .form-comment{width:auto}
+#sidebarwrap{width:auto;padding:0;float:none}
+.footer{padding:0;width:auto}
+.badge{text-align:center;float:none}
+}
+
+#blog-pager, #home-link, #blog-pager-home-link{display:none;}
+
+#ContactForm1,#ContactForm1 br{display:none} img {border-radius:3px;}/* syntax highlighter ficri */
+pre{margin-left:5px !important;margin-right:5px !important;padding-top:20px !important;padding-bottom:10px !important;padding:.8em 1em;margin:0.5em 0;background-color:#303030;border-top:3px dotted #e5e5e5 !important;border-bottom:3px dotted #e5e5e5 !important; font-size:13px;color:#fff;font-family:Rubik,Monaco,'Andale Mono','Courier New',Courier,Monospace;line-height:1.4em;position:relative;white-space:pre-wrap;word-wrap:break-word;overflow:auto;max-height:100%}
+code{font-family:Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,Monospace;font-size:13px;color:white}
+pre code{padding:0!important;color:white;background:none!important;border:none!important;display:block}
+pre .comment,pre .template_comment,pre .diff .header,pre .doctype,pre .pi,pre .lisp .string,pre .javadoc{color:#93a1a1;font-style:italic}
+pre .keyword,pre .winutils,pre .method,pre .addition,pre .css .tag,pre .request,pre .status,pre .nginx .title{color:#F5821E}
+pre .number,pre .command,pre .string,pre .tag .value,pre .rules .value,pre .phpdoc,pre .tex .formula,pre .regexp,pre .hexcolor{color:#008800}
+pre .title,pre .localvars,pre .chunk,pre .decorator,pre .built_in,pre .identifier,pre .vhdl .literal,pre .id,pre .css .function{color:#268bd2}
+pre .attribute,pre .variable,pre .lisp .body,pre .smalltalk .number,pre .constant,pre .class .title,pre .parent,pre .haskell .type{color:#A2886F}
+pre .preprocessor,pre .preprocessor .keyword,pre .shebang,pre .symbol,pre .symbol .string,pre .diff .change,pre .special,pre .attr_selector,pre .important,pre .subst,pre .cdata,pre .clojure .title,pre .css .pseudo{color:#000;font-weight:bold}
+pre .deletion{color:#dc322f}
+pre .tex .formula{background:#dce5f2}
+
+/* Related Posts Middle by igniel.com */
+.ignielRelatedMiddle {background-color:#f5f5f5; border:1px solid #e5e5e5; display:block; margin:20px 0px; padding:10px 20px;}
+.ignielRelatedMiddle .judul {color:white !important; font-size:120%; font-weight:600; text-transform:uppercase}
+.ignielRelatedMiddle ul {margin:10px 0px 0px !important; padding:0px !important;}
+.ignielRelatedMiddle ul li {list-style:none; padding:5px 0px !important; border-bottom:2px dotted #aaa !important; text-align:left !important; line-height:1.25em !important;}
+.ignielRelatedMiddle ul li:first-child {padding-top:0px; !important;}
+.ignielRelatedMiddle ul li:last-child {padding-bottom:0px !important; border:0px !important}
+.ignielRelatedMiddle ul li a:before{content:''; display:inline-block; width:17px; height:17px; margin-right:3px; vertical-align:-3px; background:url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z' fill='%23333'/%3E%3C/svg%3E") center / 20px no-repeat;} 
+
+.fixed-header{display:none;}
+
+/* SOCIAL ICON */
+ul.nav-social {
+list-style: none;
+margin: 0;
+padding: 0;
+text-align:center;
+margin-bottom:3px;
+margin-top:3px;
+font-size:10px;
+}
+ul.nav-social li {
+display: inline-block;
+padding: 0px 15px;
+margin: 0;
+}
+ul.nav-social li a {
+color: #134f5c;
+}
+ul.nav-social li a:hover {
+color:#555;
+}
+ul.nav-social li a.fcb:hover {
+color:#3B5A9B;
+}
+ul.nav-social li a.gpl:hover {
+color:#DD4B39;
+}
+ul.nav-social li a.twt:hover {
+color:#1BB2E9;
+}
+ul.nav-social li a.ytb:hover {
+color:#ED3F41;
+}
+ul.nav-social li a.lkdn:hover {
+color:#007fb2;
+}
+ul.nav-social li a.igicon:hover {
+color:#527fa4;
+}
