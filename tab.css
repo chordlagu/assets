@@ -1,0 +1,26 @@
+pre#tabs,
+pre#up-text-scroll
+{
+    font-family: Courier New, Courier, mono;
+    word-break: normal;
+    white-space: pre;    
+    word-wrap: normal;
+    overflow-x: scroll !important; 
+    font-size: 10px;
+    overflow: auto;
+    display: -moz-inline-stack; /* ← Firefox 2 backwards compatibility */
+    display: inline-block;
+    border-top:solid 0px white !important;
+  border-bottom:solid 0px white !important;
+  font-weight:bold;
+  margin-left:-12px !important;
+  margin-top:-45px !important;
+}
+
+div.double-scroll,
+div.wrapper-up-scroll
+{
+    overflow-x: scroll !important; 
+    overflow-y:hidden;
+    width: 100%;
+}
