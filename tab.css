@@ -6,13 +6,12 @@ pre#up-text-scroll
     white-space: pre;    
     word-wrap: normal;
     overflow-x: scroll !important; 
-    font-size: 10px;
+    font-size: 11px;
     overflow: auto;
     display: -moz-inline-stack; /* ← Firefox 2 backwards compatibility */
     display: inline-block;
     border-top:solid 0px white !important;
   border-bottom:solid 0px white !important;
-  font-weight:bold;
   margin-left:-12px !important;
   margin-top:-45px !important;
 }
