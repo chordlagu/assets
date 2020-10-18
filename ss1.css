@@ -95,7 +95,7 @@ body#layout #sidebarwrap {float: right;width: 35%;}
 #content th{background:#edeff0}
 .post br{padding:0;margin:0;line-height:100%}
 .post p{padding:0;margin:0}
-.post{padding-bottom:0;line-height:1.4em;font-size:small;color:#black;word-wrap:break-word}
+.post{padding-bottom:0;line-height:1.4em;font-size:14px;color:#black;word-wrap:break-word}
 .ul {list-style-type:none;list-style:none;}
 .post ul{list-style:none;margin:0 0 0px;list-style-type:none;}
 .post ul li{list-style-type:none;list-style:none;padding-left:0px;position:relative;}
