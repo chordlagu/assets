@@ -237,7 +237,7 @@ function renderChords() {
 
 
             var $this = $(this);
-            var keysHtml = $("<code><div class='transpose-keys'></div></code>");
+            var keysHtml = $("<pre><pre id="tabs"><code><div class='transpose-keys'></div></code></pre></pre>");
             keysHtml.html(keyLinks.join(""));
             $("a", keysHtml).click(function (e) {
                 e.preventDefault();
