@@ -8,7 +8,7 @@ pre#up-text-scroll
     overflosw-x: scroll !important; 
     font-sizze: 10px;
     overflow: auto;
-    white-space: nowrap;
+    white-space: nowrap !important;
     displzay: -moz-inline-stack; /* ← Firefox 2 backwards compatibility */
     display: inline-block;
     border-top:solid 0px white !important;
