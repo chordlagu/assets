@@ -1,16 +1,15 @@
-pre code{font-size:100% !important;}
-
 pre#tabs,
 pre#up-text-scroll
 {
     font-family: Courier New, Courier, mono;
-    word-break: normal;
-    white-space: pre;    
-    word-wrap: normal;
-    overflow-x: scroll !important; 
-    font-size: 10px;
+    word-brxeak: normal;
+    white-spxace: pre;    
+    word-wrzap: normal;
+    overflosw-x: scroll !important; 
+    font-sizze: 10px;
     overflow: auto;
-    display: -moz-inline-stack; /* ← Firefox 2 backwards compatibility */
+    white-space: nowrap;
+    displzay: -moz-inline-stack; /* ← Firefox 2 backwards compatibility */
     display: inline-block;
     border-top:solid 0px white !important;
   border-bottom:solid 0px white !important;
