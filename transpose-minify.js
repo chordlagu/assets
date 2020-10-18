@@ -65,7 +65,6 @@
               case "E":
               case "F#":
               case "G":
-              case "G#":
                   for (;i<keys.length;i++) {
                     if (keys[i].value == keyValue && keys[i].type == "S") {
                       return keys[i];
