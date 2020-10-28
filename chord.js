@@ -250,5 +250,5 @@ jQuery("#btnChordVisibility,#btnPDF,#btnPrint").attr("disabled", false);
 jQuery("pre span:first").css('font-weight', 'bold');
 jQuery("span").filter(function() { return jQuery(this).text().indexOf("[") >= 0 }).css('font-weight', 'bold');
 jQuery("span").filter(function() { return jQuery(this).text().indexOf("[") >= 0 }).css('background', 'red');
-jQuery("span").filter(function() { return jQuery(this).text().indexOf("[") >= 0 }).css('padding', '5px');
-jQuery("span").filter(function() { return jQuery(this).text().indexOf("[") >= 0 }).css('margin-bottom:', '5px !important');
+jQuery("span").filter(function() { return jQuery(this).text().indexOf("[") >= 0 }).css('padding', '2px');
+jQuery("span").filter(function() { return jQuery(this).text().indexOf("[") >= 0 }).css('margin-bottom:', '4px');
