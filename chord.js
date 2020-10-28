@@ -226,7 +226,7 @@ jQuery("#btnPrint").click(function(){
 	jQuery("span", html).first().after("<br><span>Key : " + jQuery(".selected").text() + "</span>");
 	
 	jQuery("span", html).first().text(jQuery("span", html).first().text().replace("Chord ","")).css({
-		"font-size":"2em",
+		"font-size":"2.5em",
 		"font-weight":"bold"
 	});
 	
@@ -249,4 +249,4 @@ jQuery("#btnChordVisibility,#btnPDF,#btnPrint").attr("disabled", false);
 
 jQuery("pre span:first").css('font-weight', 'bold');
 jQuery("span").filter(function() { return jQuery(this).text().indexOf("Chorus") >= 0 }).css('font-weight', 'bold');
-jQuery("span").filter(function() { return jQuery(this).text().indexOf("Chorus") >= 0 }).css('color', 'red !important');
+jQuery("span").filter(function() { return jQuery(this).text().indexOf("Chorus") >= 0 }).css('background', 'red');
