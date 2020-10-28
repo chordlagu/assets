@@ -78,13 +78,13 @@ jQuery(".c").attr("title","").tooltip({
 			if(jtab.Chords[imgName(this)] == undefined){
 				jtab.IsValidChord= false;
 				
-				return jQuery("<div>Tidak Ada Chord</div>");
+				return jQuery("<div>No data</div>");
 			}
 			else{
 				jtab.IsValidChord= true;
 				jtab.Variation = 1;
 				jtab.Chord = imgName(this);
-				return jQuery("<div><center><b>Variasi <span id='spanVariation'>" + jtab.Variation + "</span></h3></center></div><div class='jtab chordonly'>" + jtab.Chord + ":" + jtab.Variation + "</div><div><button id='btnNext'>Berikutnya</button></div><div id='divPrevious'><button id='btnPrevious'>Sebelumnya</button></div>");
+				return jQuery("<div><center><h3>Variation <span id='spanVariation'>" + jtab.Variation + "</span></h3></center></div><div class='jtab chordonly'>" + jtab.Chord + ":" + jtab.Variation + "</div><div><button id='btnNext'>Next</button></div><div id='divPrevious'><button id='btnPrevious'>Previous</button></div>");
 			}
 		}
 	},
@@ -130,7 +130,7 @@ jQuery(".on").attr("title","").tooltip({
 			if(piano.Chords[(Chord).replace(/#/g,"s")] == undefined){
 				piano.IsValidChord = false;
 				
-				return jQuery("<div>Tidak Ada Data</div>");
+				return jQuery("<div>No data</div>");
 			}
 			else{
 				piano.IsValidChord = true
@@ -246,5 +246,6 @@ jQuery("#btnPrint").click(function(){
 jQuery("#instrument-info").tooltip();
 
 jQuery("#btnChordVisibility,#btnPDF,#btnPrint").attr("disabled", false);
+
 jQuery("pre span:first").css('font-weight', 'bold');
-jQuery("pre span").filter(function() { return jQuery(this).text().indexOf(" ]") >= 0 }).css('font-weight', 'bold');
+jQuery("span").filter(function() { return jQuery(this).text().indexOf(" :") >= 0 }).css('font-weight', 'bold');
