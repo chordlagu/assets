@@ -250,3 +250,4 @@ jQuery("#btnChordVisibility,#btnPDF,#btnPrint").attr("disabled", false);
 jQuery("pre span:first").css('font-weight', 'bold');
 jQuery("span").filter(function() { return jQuery(this).text().indexOf("[") >= 0 }).css('font-weight', 'bold');
 jQuery("span").filter(function() { return jQuery(this).text().indexOf("[") >= 0 }).css('background', 'red');
+jQuery("span").filter(function() { return jQuery(this).text().indexOf("[") >= 0 }).css('border', 'solid 2px red');
