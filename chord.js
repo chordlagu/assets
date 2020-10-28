@@ -247,4 +247,4 @@ jQuery("#instrument-info").tooltip();
 
 jQuery("#btnChordVisibility,#btnPDF,#btnPrint").attr("disabled", false);
 jQuery("pre span:first").css('font-weight', 'bold');
-jQuery("span").filter(function() { return jQuery(this).text().indexOf(" :") >= 0 }).css('font-weight', 'bold', 'color', 'red !important', 'border', 'solid 2px red');
+jQuery("span").filter(function() { return jQuery(this).text().indexOf(" :") >= 0 }).css('font-weight', 'bold');
