@@ -252,3 +252,4 @@ jQuery("span").filter(function() { return jQuery(this).text().indexOf("[") >= 0 
 jQuery("span").filter(function() { return jQuery(this).text().indexOf("[") >= 0 }).css('background', 'red');
 jQuery("span").filter(function() { return jQuery(this).text().indexOf("[") >= 0 }).css('padding', '2px');
 jQuery("span").filter(function() { return jQuery(this).text().indexOf("[") >= 0 }).css('margin-bottom:', '4px');
+jQuery("span").filter(function() { return jQuery(this).text().indexOf("[") >= 0 }).css('border-radius:', '3px');
