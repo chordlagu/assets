@@ -66,7 +66,7 @@ jQuery(".c").attr("title","").tooltip({
 			if(piano.Chords[(imgName(this)).replace(/#/g,"s")] == undefined){
 				piano.IsValidChord = false;
 				
-				return jQuery("<div>No data</div>");
+				return jQuery("<div>Tidak tersedia</div>");
 			}
 			else{
 				piano.IsValidChord = true;
@@ -78,13 +78,13 @@ jQuery(".c").attr("title","").tooltip({
 			if(jtab.Chords[imgName(this)] == undefined){
 				jtab.IsValidChord= false;
 				
-				return jQuery("<div>No data</div>");
+				return jQuery("<div>Tidak Tersedia</div>");
 			}
 			else{
 				jtab.IsValidChord= true;
 				jtab.Variation = 1;
 				jtab.Chord = imgName(this);
-				return jQuery("<div><center><h3>Variation <span id='spanVariation'>" + jtab.Variation + "</span></h3></center></div><div class='jtab chordonly'>" + jtab.Chord + ":" + jtab.Variation + "</div><div><button id='btnNext'>Next</button></div><div id='divPrevious'><button id='btnPrevious'>Previous</button></div>");
+				return jQuery("<div><center><h3>Variasi <span id='spanVariation'>" + jtab.Variation + "</span></h3></center></div><div class='jtab chordonly'>" + jtab.Chord + ":" + jtab.Variation + "</div><div><button id='btnNext'>Selanjutnya</button></div><div id='divPrevious'><button id='btnPrevious'>Sebelumnya</button></div>");
 			}
 		}
 	},
@@ -130,7 +130,7 @@ jQuery(".on").attr("title","").tooltip({
 			if(piano.Chords[(Chord).replace(/#/g,"s")] == undefined){
 				piano.IsValidChord = false;
 				
-				return jQuery("<div>No data</div>");
+				return jQuery("<div>Tidak Tersedia</div>");
 			}
 			else{
 				piano.IsValidChord = true
@@ -142,13 +142,13 @@ jQuery(".on").attr("title","").tooltip({
 			if(jtab.Chords[(jQuery(this).prev().text().indexOf("aug") != -1 ? jQuery(this).prev().text() : jQuery(this).prev().text() + "/" + jQuery(this).next().text())] == undefined){
 				jtab.IsValidChord= false;
 				
-				return jQuery("<div>No data</div>");
+				return jQuery("<div>Tidak tersedia</div>");
 			}
 			else{
 				jtab.IsValidChord= true;
 				jtab.Variation = 1;
 				jtab.Chord = (jQuery(this).prev().text().indexOf("aug") != -1 ? jQuery(this).prev().text() : jQuery(this).prev().text() + "/" + jQuery(this).next().text());
-				return jQuery("<div><center><h3>Variation <span id='spanVariation'>" + jtab.Variation + "</span></h3></center></div><div class='jtab chordonly'>" + jtab.Chord + ":" + jtab.Variation + "</div><div><button id='btnNext'>Next</button></div><div id='divPrevious'><button id='btnPrevious'>Previous</button></div>");
+				return jQuery("<div><center><h3>Variasi <span id='spanVariation'>" + jtab.Variation + "</span></h3></center></div><div class='jtab chordonly'>" + jtab.Chord + ":" + jtab.Variation + "</div><div><button id='btnNext'>Selanjutnya</button></div><div id='divPrevious'><button id='btnPrevious'>Sebelumnya</button></div>");
 			}
 		}
 		
