@@ -1,0 +1,21 @@
+.fixed-header, .header{box-shadow:0 0 0 0 transparent !important;}
+  div.scrollmenu {
+  background-color: #383838;
+  overflow: auto;
+  white-space: nowrap;
+  height:49px !important;padding-left:10px;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size:12px !important;
+  font-weight:bold;
+}
+
+div.scrollmenu a:hover {
+  background-color: #272727;
+}
