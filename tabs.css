@@ -1,0 +1,26 @@
+pre#tabs,
+pre#up-text-scroll
+{
+    font-family:Arial, sans-serif;
+    word-brxeak: normal;
+    white-spxace: pre;    
+    word-wrzap: normal;
+    overflosw-x: scroll !important; 
+    font-sizze: 10px;
+    overflow: auto;
+    white-space: nowrap !important;
+    displzay: -moz-inline-stack; /* ← Firefox 2 backwards compatibility */
+    display: inline-block;
+    border-top:solid 0px white !important;
+  border-bottom:solid 0px white !important;
+  margin-left:-12px !important;
+  margin-top:-45px !important;
+}
+
+div.double-scroll,
+div.wrapper-up-scroll
+{
+    overflow-x: scroll !important; 
+    overflow-y:hidden;
+    width: 100%;
+}
