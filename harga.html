@@ -1,0 +1,21 @@
+<script>$(document).ready(function() {
+ var url= "https://chain.so/api/v2/get_price/BTC/USD";
+ $.get(url,function(data){
+   var text = ` ${data.data.prices[1].price} `
+    var integer = parseFloat(text, 10)
+    var percent = 3
+    var display = (integer - (integer/100 * percent)).valueOf()  
+     $(".mypanel").html(display.toPrecision(7) + '$');
+
+ console.log(data);
+ })
+});
+
+</script>
+
+<p>
+Data 
+</p>
+<p class="mypanel"></p>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
