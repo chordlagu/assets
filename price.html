@@ -1,0 +1,168 @@
+
+<html>
+   <head>
+      <title>Bitcoin Price in Words - Sylvain Saurel</title>
+      
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+      <script type="text/javascript">
+         var textToSpeech = "";
+
+         var a = ['','one ','two ','three ','four ', 'five ','six ','seven ','eight ','nine ','ten ','eleven ','twelve ','thirteen ','fourteen ','fifteen ','sixteen ','seventeen ','eighteen ','nineteen '];
+         var b = ['', '', 'twenty','thirty','forty','fifty', 'sixty','seventy','eighty','ninety'];
+         
+         function numberToWords (num) {
+             if ((num = num.toString()).length > 9)
+             	return 'MOON';
+         
+             n = ('000000000' + num).substr(-9).match(/^(\d{2})(\d{2})(\d{2})(\d{1})(\d{2})$/);
+         
+             if (!n)
+             	return; var str = '';
+         
+             str += (n[2] != 0) ? (a[Number(n[2])] || b[n[2][0]] + ' ' + a[n[2][1]]) + 'hundred thousand ' : '';
+             str += (n[3] != 0) ? (a[Number(n[3])] || b[n[3][0]] + ' ' + a[n[3][1]]) + 'thousand ' : '';
+             str += (n[4] != 0) ? (a[Number(n[4])] || b[n[4][0]] + ' ' + a[n[4][1]]) + 'hundred ' : '';
+             str += (n[5] != 0) ? ((str != '') ? 'and ' : '') + (a[Number(n[5])] || b[n[5][0]] + ' ' + a[n[5][1]]) : '';
+         
+             return str;
+         }
+         
+           function bitcoinPrice() {
+         	  var xmlhttp = new XMLHttpRequest();
+         	    var url = "https://api.coindesk.com/v1/bpi/currentprice.json";
+         
+         	    xmlhttp.onreadystatechange = function() {
+         	      if (this.readyState == 4  &&  this.status == 200) {
+         	        var json = JSON.parse(this.responseText);
+         	        parseJson(json);
+         	      }		
+         	    };
+         
+         	    xmlhttp.open("GET", url, true);
+         	    xmlhttp.send();
+           }
+         
+         
+           function parseJson(json) {
+               var time = "on " + json["time"]["updated"];
+               var usdValue = json["bpi"]["USD"]["rate"];
+               var gbpValue = json["bpi"]["GBP"]["rate"]; // ToDo later
+               var euroValue = json["bpi"]["EUR"]["rate"]; // ToDo later
+         
+               var usdValueInWords = (numberToWords(usdValue.split(".")[0].replace(",","")) + " dollars").toUpperCase();
+         
+               document.getElementById("content").innerHTML = usdValueInWords;
+               document.getElementById("time").innerHTML = time;
+               document.getElementById("link-twitter").href= "https://twitter.com/intent/tweet?text=Bitcoin Price is " + usdValueInWords + " - via https://www.bitcoinpriceinwords.com";
+         
+               textToSpeech = "Bitcoin price is " + usdValueInWords;
+
+               // we call back in 60 seconds
+               setTimeout(bitcoinPrice, 60000);
+           }
+
+           function sayBitcoinPrice() {
+              if (textToSpeech) {
+                 const utterance = new SpeechSynthesisUtterance(textToSpeech);
+                 utterance.lang = 'en-US';
+                 speechSynthesis.speak(utterance);
+              }
+           }
+         
+      </script>
+      <style>
+
+         #top {
+         width: 400px;
+         margin: 0 auto;
+         margin-top: 50px;
+         display: block;
+         }
+
+         #bitcoin-price-img {
+         width: 100%;
+         margin-left: auto;
+         margin-right: auto;
+         display: block;
+         }
+
+         #time {
+         width:270px;
+         margin-left: auto;
+         margin-right: auto;
+         margin-top: 10px;
+         font-size:20px;
+         font-family: 'Sriracha', cursive;
+         color: #A5A5A5;
+         text-align: center;
+         }
+
+         #content {
+         width: 700px;
+         font-size: 50px;
+         text-align: center;
+         margin: 0 auto;
+         margin-top: 110px;
+         padding: 30px;
+         font-family: 'Sriracha', cursive;
+         border:2px solid #ccc;
+         box-shadow: 10px 10px 5px #ccc;
+         -moz-box-shadow: 10px 10px 5px #ccc;
+         -webkit-box-shadow: 10px 10px 5px #ccc;
+         -khtml-box-shadow: 10px 10px 5px #ccc;
+         cursor: pointer;
+         }
+
+         #bottom {
+         width:700px;
+         margin-left: auto;
+         margin-right: auto;
+         margin-top: 130px;
+         font-size:20px;
+         font-family: 'Sriracha', cursive;
+         color: #A5A5A5;
+         text-align:center;
+         }
+
+         a {
+         outline: none;
+         text-decoration: none;
+         padding: 2px 1px 0;
+         }
+
+         a:link {
+         color: #265301;
+         }
+
+         a:visited {
+         color: #437A16;
+         }
+
+         a:focus {
+         border-bottom: 1px solid;
+         background: #BAE498;
+         }
+
+         a:hover {
+         border-bottom: 1px solid;
+         background: #CDFEAA;
+         }
+
+         a:active {
+         background: #265301;
+         color: #CDFEAA;
+         }
+      </style>
+   </head>
+   <body onLoad="bitcoinPrice();">
+   	  <a href="https://www.bitcoinpriceinwords.com" alt="Bitcoin Price in Words">
+           <div id="top">
+            <img src="bitcoin-price-in-words-2.png" id="bitcoin-price-img"/>
+            <div id="time"></div>
+           </div>
+  	  </a>
+      <div id="content" onclick="sayBitcoinPrice();"></div>
+      <div id="bottom">&copy; <a href="https://www.inbitcoinwetrust.net" alt="In Bitcoin We Trust">In Bitcoin We Trust</a> by <a href="https://twitter.com/ssaurel" alt"Sylvain Saurel on Twitter">Sylvain Saurel</a> - Bitcoin Price powered by <a href="https://www.coindesk.com/coindesk-api">CoinDesk</a><br />Share Bitcoin Price in Words on <a href="" id="link-twitter" target="_top">Twitter</a></div>
+   </body>
+</html>	
