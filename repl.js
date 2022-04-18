@@ -34,5 +34,14 @@ $test = $test.replace(/\[Chorus 3]/gi, '<p style="margin-bottom:-5px;margin-left
 $test = $test.replace(/\[Bridge 1]/gi, '<p style="margin-bottom:-5px;margin-left:-10px;"><span class="replaced">Bridge 3</span></p>');
 $test = $test.replace(/\[Bridge 2]/gi, '<p style="margin-bottom:-5px;margin-left:-10px;"><span class="replaced">Bridge 3</span></p>');
 $test = $test.replace(/\[Bridge 3]/gi, '<p style="margin-bottom:-5px;margin-left:-10px;"><span class="replaced">Bridge 3</span></p>');
+$test = $test.replace(/\[Post-Chorus]/gi, '<p style="margin-bottom:-5px;margin-left:-10px;"><span class="replaced">Post-Chorus</span></p>');
+$test = $test.replace(/\[Pre-Chorus]/gi, '<p style="margin-bottom:-5px;margin-left:-10px;"><span class="replaced">Pre-Chorus</span></p>');
+$test = $test.replace(/\[Chorus I]/gi, '<p style="margin-bottom:-5px;margin-left:-10px;"><span class="replaced">Chorus I</span></p>');
+$test = $test.replace(/\[Chorus II]/gi, '<p style="margin-bottom:-5px;margin-left:-10px;"><span class="replaced">Chorus II</span></p>');
+$test = $test.replace(/\[Chorus III]/gi, '<p style="margin-bottom:-5px;margin-left:-10px;"><span class="replaced">Chorus III</span></p>');
+$test = $test.replace(/\[Verse I]/gi, '<p style="margin-bottom:-5px;margin-left:-10px;"><span class="replaced">Verse I</span></p>');
+$test = $test.replace(/\[Verse II]/gi, '<p style="margin-bottom:-5px;margin-left:-10px;"><span class="replaced">Verse II</span></p>');
+$test = $test.replace(/\[Verse III]/gi, '<p style="margin-bottom:-5px;margin-left:-10px;"><span class="replaced">Verse III</span></p>');
+$test = $test.replace(/\[Verse IIII]/gi, '<p style="margin-bottom:-5px;margin-left:-10px;"><span class="replaced">Verse IIII</span></p>');
 $('pre').html($test);
 }, 3000);
