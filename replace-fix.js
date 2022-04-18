@@ -43,5 +43,8 @@ $test = $test.replace(/\[Verse I]/gi, '<p style="margin-bottom:-5px;margin-left:
 $test = $test.replace(/\[Verse II]/gi, '<p style="margin-bottom:-5px;margin-left:-10px;"><span class="replaced">Verse II</span></p>');
 $test = $test.replace(/\[Verse III]/gi, '<p style="margin-bottom:-5px;margin-left:-10px;"><span class="replaced">Verse III</span></p>');
 $test = $test.replace(/\[Verse IIII]/gi, '<p style="margin-bottom:-5px;margin-left:-10px;"><span class="replaced">Verse IIII</span></p>');
+$test = $test.replace(/\[Melodi]/gi, '<p style="margin-bottom:-5px;margin-left:-10px;"><span class="replaced">Melodi</span></p>');
+$test = $test.replace(/\[Tab]/gi, '<p style="margin-bottom:-5px;margin-left:-10px;"><span class="replaced">Tab</span></p>');
+$test = $test.replace(/\[Duet]/gi, '<p style="margin-bottom:-5px;margin-left:-10px;"><span class="replaced">Duet</span></p>');
 $('pre').html($test);
 }, 3000);
