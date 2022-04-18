@@ -47,5 +47,6 @@ $test = $test.replace(/\[Melodi]/gi, '<p style="margin-bottom:-5px;margin-left:-
 $test = $test.replace(/\[Tab]/gi, '<p style="margin-bottom:-5px;margin-left:-10px;"><span class="replaced">Tab</span></p>');
 $test = $test.replace(/\[Duet]/gi, '<p style="margin-bottom:-5px;margin-left:-10px;"><span class="replaced">Duet</span></p>');
 $test = $test.replace(/\[Intro 2]/gi, '<p style="margin-bottom:-5px;margin-left:-10px;"><span class="replaced">Intro 2</span></p>');
+$test = $test.replace(/\[Ending]/gi, '<p style="margin-bottom:-5px;margin-left:-10px;"><span class="replaced">Ending</span></p>');
 $('pre').html($test);
 }, 3000);
