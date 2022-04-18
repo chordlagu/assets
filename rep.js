@@ -1,0 +1,12 @@
+var $test = $('pre').html();
+$test = $test.replace(/\[Intro]/gi, '<span class="replaced" style="font-size:16px;">Intro</span>');
+$test = $test.replace(/\[Chorus]/gi, '<span class="replaced" style="font-size:16px;">Chorus</span>');
+$test = $test.replace(/\[Int]/gi, '<span class="replaced" style="font-size:16px;">Int</span>');
+$test = $test.replace(/\[Musik]/gi, '<span class="replaced" style="font-size:16px;">Musik</span>');
+$test = $test.replace(/\[Music]/gi, '<span class="replaced" style="font-size:16px;">Music</span>');
+$test = $test.replace(/\[Verse]/gi, '<span class="replaced" style="font-size:16px;">Verse</span>');
+$test = $test.replace(/\[Reff]/gi, '<span class="replaced" style="font-size:16px;">Reff</span>');
+$test = $test.replace(/\[Outro]/gi, '<span class="replaced" style="font-size:16px;">Outro</span>');
+$test = $test.replace(/\[Overtune]/gi, '<span class="replaced" style="font-size:16px;">Overtune</span>');
+$test = $test.replace(/\[Bridge]/gi, '<span class="replaced" style="font-size:16px;">Bridge</span>');
+$('pre').html($test);
