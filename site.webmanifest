@@ -1,0 +1,23 @@
+{
+    "name": "Chordlagu.id",
+    "short_name": "Chordlagu.id",
+    "icons": [
+        {
+            "src": "https://1.bp.blogspot.com/-Ux6Xn8oqNRk/YYZp79uTZQI/AAAAAAAAcj4/SVR_H7IYdyIceoptrpcIbt8-qPbpP9KjgCLcBGAsYHQ/s0/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "https://1.bp.blogspot.com/-9uJWThk_xmw/YYZp7ysG5eI/AAAAAAAAckA/NsC5lPYgd1A6P4F6uoFl7nxWnexgVm1mwCLcBGAsYHQ/s16000/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "theme_color": "#202020",
+    "background_color": "#000000",
+    "display": "standalone",
+    "prefer_related_applications": false,
+  "start_url": "https://www.chordlagu.id/p/index.html"
+}
