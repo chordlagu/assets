@@ -19,7 +19,7 @@ function renderChords() {
     var content = '';
     
     chords.forEach(function(value, index) {
-    content += '<img class="mobchords" alt="' + value + '" width="41"height="72" src="https://cdn.chordlagu.id/chordsimg/' + titleChords[index] + '.jpg" />';
+    content += '<img class="mobchords" alt="' + value + '" width="41"height="72" src="https://cdn.chordlagu.id/chords/' + titleChords[index] + '.jpg" />';
       });
     console.log(content);
     $('#song_chords').append(content);
