@@ -1,9 +1,9 @@
 {
   "name": "Ed Sheeran",
   "biodata": "Edward Christopher Sheeran, MBE (lahir 17 Februari 1991) adalah seorang penyanyi, penulis lagu, gitaris, produser rekaman, dan aktor berkebangsaan Inggris. Sheeran lahir di Halifax, West Yorkshire, dan dibesarkan di Framlingham, Suffolk. Dia memasuki Academy of Contemporary Music di Guildford sebagai seorang sarjana pada usia 18 tahun di 2009.",
-  "website": "<a href='https://www.edsheeran.com/' target='_blank' rel='nofollow' title='Ed Sheeran Official Website'>Edsheeran.com</a>",
-  "facebook": "<a href='https://web.facebook.com/edsheeranmusic' target='_blank' rel='nofollow' title='Ed Sheeran Facebook'>Click Here</a>",
-  "twitter": "<a href='https://twitter.com/edsheeran' target='_blank' rel='nofollow' title='Ed Sheeran Twitter'>Click Here</a>",
-  "instagram": "<a href='https://www.instagram.com/teddysphotos/' target='_blank' rel='nofollow' title='Ed Sheeran Instagram'>Click Here</a>",
-  "spotify": "<a href='https://open.spotify.com/artist/6eUKZXaKkcviH0Ku9w2n3V' target='_blank' rel='nofollow' title='Ed Sheeran Spotify'>Click Here</a>"
+  "website": "<a href='https://www.edsheeran.com/' target='_blank' rel='nofollow' title='Ed Sheeran Official Website'><i class='fa fa-globe' aria-hidden='true'></i></a>",
+  "facebook": "<a href='https://web.facebook.com/edsheeranmusic' target='_blank' rel='nofollow' title='Ed Sheeran Facebook'><i class='fa fa-facebook' aria-hidden='true'></i></a>",
+  "twitter": "<a href='https://twitter.com/edsheeran' target='_blank' rel='nofollow' title='Ed Sheeran Twitter'><i class='fa fa-twitter' aria-hidden='true'></i></a>",
+  "instagram": "<a href='https://www.instagram.com/teddysphotos/' target='_blank' rel='nofollow' title='Ed Sheeran Instagram'><i class='fa fa-instagram' aria-hidden='true'></i></a>",
+  "spotify": "<a href='https://open.spotify.com/artist/6eUKZXaKkcviH0Ku9w2n3V' target='_blank' rel='nofollow' title='Ed Sheeran Spotify'><i class='fa fa-spotify' aria-hidden='true'></i></a>"
 }
