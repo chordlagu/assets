@@ -24,5 +24,5 @@ window.onload = function() {
                 }
             }
         });
-    }, 3000); // Jeda 3 detik sebelum eksekusi
+    }, 5000); // Jeda 3 detik sebelum eksekusi
 };
