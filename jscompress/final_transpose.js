@@ -40,8 +40,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 for (var l = 0; l < r.length; l++) {
                     !(function () {
                         var s = r[l]
-                                .replace(/\b(Intro\s: |Musik\s: |Int.\s: |Int\s: |Outro\s: |Reff\s: )/gi, " ")
+                                .replace(/\b(Intro\s: |Musik\s: |Int\.\s: |Int\s: |Outro\s: |Reff\s: )/gi, " ")
                                 .replace(/\../g, " ")
+                                .replace(/\.../g, " ")
+                                .replace(/\./g, " ")
                                 .replace(/\â€“/g, " ")
                                 .replace(/\-/g, " ")
                                 .replace(/\(/g, " ")
