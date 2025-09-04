@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 for (var l = 0; l < r.length; l++) {
                     !(function () {
                         var s = r[l]
-                                .replace(/(Intro\s: |Musik\s: |Int\.\s: |Int\s: |Outro\s: |Reff\s: |Int\.\s)/gi, " ")
+                                .replace(/(Intro\s: |Musik\s: |Int\.\s: |Int\s: |Outro\s: |Reff\s: |Int\.\s|\(Chorus\)|\(Int\.\)|\(Intro\)|\(Outro\)|\(Ending\)|\(Verse\))/gi, " ")
                                 .replace(/\../g, " ")
                                 .replace(/\.../g, " ")
                                 .replace(/\./g, " ")
@@ -51,12 +51,6 @@ document.addEventListener("DOMContentLoaded", function () {
                                 .replace(/\b(x2|x3|x4|x5|x6|x7|x8|x9|x10|x11|x12|x13|x14|x15|x16|x17|x18|x19)\b/g, " ")
                                 .replace(/\*/g, " ")
                                 .replace(/\s+/g, " ")
-                                .replace(/\(Chorus\)/gi, "Chorus : ")
-                                .replace(/\(Int\.\)/gi, "Int. : ")
-                                .replace(/\(Intro\)/gi, "Intro : ")
-                                .replace(/\(Outro\)/gi, "Outro : ")
-                                .replace(/\(Ending\)/gi, "Ending : ")
-                                .replace(/\(Verse\)/gi, "Verse : ")
                                 .split(" ");
                         for (var a = 0; a < s.length; a++)
                             if (0 == !h.trim(s[a]).length && !s[a].match(u.chordRegex)) return;
